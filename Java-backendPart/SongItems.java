@@ -1,4 +1,4 @@
-public abstract class SongItems {
+public abstract class SongItems{
 	private String songName;
 	private String artistName;
 	private String genre;
