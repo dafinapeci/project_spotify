@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  /* Arka plan container'ı */
+  .background-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Yatayda ortalama */
+    align-items: center; /* Dikeyde ortalama */
+    flex-wrap: wrap;
+  }
+  
+  .background-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Video ekranı tamamen kaplasın */
+  }
+  /* Butonların düzeni */
+  .startLabel{
+    position: absolute;
+    background: transparent;
+    color: black;
+    font-size: 28px;
+    border-radius: 5px;
+    text-align: center;
+    transform: translateX(-50%);
+    z-index: 10; 
+  }
+
+  .sign-inButton, .sign-upButton {
+    position: absolute;
+    color: black;
+    font-size: 28px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    transform: translateX(-50%);
+    z-index: 10; 
+  
+  }
+  
+  /* Her butonun sabit boyutları */
+  .sign-inButton {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    padding: 0;
+    width: 25vw;
+    height: 7vh;
+  
+  }
+  .startLabel {
+    top: 20%;
+    left: 15%;
+    padding: 2.5% 8% ;
+    border: 2px solid black;
+    width: 20vw;
+  }
+  .sign-upButton {
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    padding: 0; /* Padding kaldırıldı, genişlik ve yükseklik ile ayarlandı */
+    width: 25vw;
+    height: 7vh;
+  
+  }
+  
+  
+  .startLabel textarea{
+    border: solid black; 
+    border-radius: 5px; 
+    width: 150px;
+  
+  }
+  
+  .sign-upButton button, .sign-inButton button {
+    background-color: rgba(110, 184, 227, 0.5);
+    color: black;
+    border: 2px solid black; /* Çerçeve kalınlığı artırıldı */
+    font-size: 28px;
+    cursor: pointer; /* Tıklanabilir olduğunu gösteren imleç */
+    width: 100%; /* Butonun tam olarak kapsayıcıyı doldurması */
+    height: 100%; /* Tüm alanı kaplaması */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px; /* Köşeleri yumuşatma */
+    z-index: 10;
+}
+
+.sign-upButton button:hover, .sign-inButton button:hover {
+  background-color: rgba(110, 184, 227, 0.8); /* Hover rengini biraz koyulaştırma */
+}
+  
+.ekstra{
+  position: absolute; /* Sabit konumlandırma */
+  bottom: 5%; /* Sayfanın alt kısmında yer alsın */
+  left: 50%; /* Ortada yer alsın */
+  transform: translateX(-50%); /* Yatayda tam ortala */
+  z-index: 10; /* Üstte kalması için */
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7); /* Görünürlük için arka plan */
+  border-radius: 5px; /* Köşe yuvarlama */
+  color: white;
+  font-size: 20px;
+}
+.ekstra button {
+  padding: 20px 40px;
+  font-size: 22px;
+  background-color: rgba(110, 184, 227, 0.7);
+  color: black;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
