@@ -1,0 +1,107 @@
+.SIgn-up{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Manrope', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    background: linear-gradient(to bottom, #2d2c2c 0%, #000000 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligns content from the top */
+    padding-top: 35px; /* Adds spacing from the top for logo */
+    box-sizing: border-box;
+}
+
+
+.total-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    background-color: #000;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+
+.logo-header {
+    text-align: center;
+    margin: 0;
+}
+
+.logo {
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+#signUpHeader {
+    font-weight: 1000;
+    font-size: 35px;
+    letter-spacing: -0.5px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+
+
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up-form label {
+    margin: 10px 0 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.sign-up-form input {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    background-color: #121212;
+    color: #fff;
+    border: 1px solid #727272;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sign-up-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1db954;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.sign-up-button:hover {
+    background-color: #1ed760;
+}
+
+
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #B3B3B3;
+}
+
+.login-link-text {
+    color: #1ed760;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-link-text:hover {
+    text-decoration: underline;
+}
